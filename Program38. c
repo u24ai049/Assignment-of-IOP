@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int i, n;
+    printf("Enter the number till you want series");
+    scanf("%d",&n);
+    for(i=1;i<n;i++)
+    {
+        printf("%d\n",pow(i,2));
+    } 
+}
