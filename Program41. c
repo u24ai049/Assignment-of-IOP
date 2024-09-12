@@ -13,7 +13,7 @@ int main()
             printf("The factor of number is %d\n",b);
             //break;
         }
-    }
+      }
 
   /*  if (b == num) 
     {
@@ -21,7 +21,7 @@ int main()
     } else 
     {
         printf("Not Prime\n");
-    } /*
+    } */
 
     return 0;
 }
