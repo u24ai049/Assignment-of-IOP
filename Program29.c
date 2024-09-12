@@ -18,10 +18,10 @@ int main()
         num /= 10;
     }
 
-    if (originalNum == reversedNum) {
-        printf("%d is a palindrome.\n", originalNum);
+    if (oNum == rNum) {
+        printf("%d is a palindrome.\n", oNum);
     } else {
-        printf("%d is not a palindrome.\n", originalNum);
+        printf("%d is not a palindrome.\n", oNum);
     }
 
     return 0;
