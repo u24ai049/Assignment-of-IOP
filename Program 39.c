@@ -2,16 +2,16 @@
 
 int main()
 {
-    float i, n, factorial, j, sum;
+    float i, n, factorial=1, j, sum;
     printf("Enter the number till you want series");
-    scanf("%d",&n);
+    scanf("%f",&n);
     for(i=1;i<=n;i++)
-    {   
-        for(j=1;j<=i;j++)
+    {
+        if(i<n)
         {
-            factorial=factorial*j;
+        printf("%.0f/%.0f!+",i,i);
         }
-        sum=i/factorial;
-        printf("%f",sum);
-    } 
+        else
+         printf("%.0f/%0.f!",i,i);
+    }
 }
