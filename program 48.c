@@ -8,7 +8,7 @@ int main()
         {
         if(j>i)
         {
-            printf("  ",j);
+            printf("   ",j);
         }
         else
         {
