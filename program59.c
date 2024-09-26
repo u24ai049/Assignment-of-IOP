@@ -25,11 +25,11 @@ int main()
    }
         for(int i = 0; i < 10; i++)//printing new swaped array
     {
-        printf("%d\n", &arr1[i]);
+        printf("%d\n", arr1[i]);
     }
         for(int i = 0; i < 10; i++)
     {
-        printf("%d\n", &arr2[i]);
+        printf("%d\n", arr2[i]);
     }
     
     return 0;
