@@ -8,7 +8,7 @@ struct Book
     float price;
 };
 
-void dBook(struct Book b)
+void seeBook(struct Book b)
 {
     printf("Title: %s\n", b.title);
     printf("Author: %s\n", b.author);
@@ -29,7 +29,7 @@ int main()
     printf("Enter price: ");
     scanf("%f", &b.price);
     
-    dBook(b);
+    seeBook(b);
     
     return 0;
 }
