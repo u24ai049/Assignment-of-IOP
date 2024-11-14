@@ -1,5 +1,5 @@
-#include <stdio.h>
 
+#include <stdio.h>
 struct Book
 {
     char title[50];
@@ -8,28 +8,29 @@ struct Book
     float price;
 };
 
-void seeBook(struct Book b)
+void DisplayBook(struct Book b)
 {
-    printf("Title: %s\n", b.title);
-    printf("Author: %s\n", b.author);
-    printf("Pages: %d\n", b.pages);
-    printf("Price: %f\n", b.price);
+    printf("Titl %s\n", b.title);
+    printf("Author   %s\n", b.author);
+    printf("Pages %d\n", b.pages);
+    printf("Price %f\n", b.price);
 }
 
 int main()
 {
     struct Book b;
     
-    printf("Enter book title: ");
-    scanf(" %c", b.title);
-    printf("Enter author: ");
-    scanf(" %c", b.author);
-    printf("Enter number of pages: ");
+    printf("Enter book title ");
+    scanf(" %[^\n]", b.title);
+    printf("Enter author ");
+    scanf("  %[^\n], b.author);
+    printf("Enter number of pages");
     scanf("%d", &b.pages);
-    printf("Enter price: ");
+    printf("Enter price");
     scanf("%f", &b.price);
     
-    seeBook(b);
+    DisplayBook(b);
     
     return 0;
 }
+
