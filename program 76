@@ -1,0 +1,15 @@
+#include<stdio.h>
+void function(int a);
+int main() {
+    int num;
+    printf("Ente the the number:");
+    scanf("%d",&num);
+    function(num);
+    return 0;
+}
+void function(int a){
+    if(a%2==0)
+    printf(" number is Even");
+    else
+    printf(" number is Odd");
+}
