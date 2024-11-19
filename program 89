@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    int a,n;
+    printf("Enter the number of elements");
+    scanf("%d",&n);
+    int arr1[n],arr2[n];
+    int *ptr=arr1;
+    
+    for(int i=0;i<n;i++)
+    {
+        printf("Enter the %d element of array1\n",i+1);
+        scanf("%d",ptr+i);
+    }
+     for(int i=0;i<n;i++)
+    {
+        arr2[n-i-1]=*(ptr+i);
+    }
+    for(int i=0;i<n;i++)
+    {
+    
+        printf(" %d ",arr2[i]);
+    }
+}
