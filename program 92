@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int *ptr,maximum,num;
+    printf("Enter the number of values");
+    scanf("%d",&num);
+    int arr[num];
+    ptr=arr;
+    for(int i=0;i<num;i++)
+    {
+        printf("Enter the %d value\t",i+1);
+        scanf("%d",&arr[i]);
+    }
+    maximum=*ptr;
+    for(int i=1;i<num;i++){
+        ptr++;
+        if(*ptr>maximum)
+        maximum=*ptr;
+        
+    }
+        printf("%d",maximum);
+    
+}
