@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char len[100];
+    char *ptr=len;
+    int word;
+    printf("Enter the sentence\n");
+    fgets(len,100,stdin);
+    for(int i=0;*(ptr+i)!='\0';i++){
+        if(*(ptr+i)==' ')
+        word++;
+    }
+    printf("the number of words are %d",word+1);
+}
