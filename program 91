@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+
+    int main(){
+        int n,a,b;
+        int *ptr=&n;
+        printf("Enter the number you want square and cube of    ");
+        scanf("%d",ptr);
+       int *square=&a;
+       int *cube=&b;
+       *square=(*ptr)*(*ptr);
+       *cube=(*ptr)*(*ptr)*(*ptr);
+       printf("Square of %d is %d\n",*ptr,*square);
+       printf("cube of %d is %d",*ptr,*cube);
+}
