@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char len[100];
+    char *ptr=len;
+    printf("Enter the sentence\n");
+    fgets(len,100,stdin);
+    int count=0;
+    for(int i=0;*(ptr+i)!='\0';i++){
+        count++;
+    }
+    printf("The length of sentence considering space is %d\n",--count);
+    int ct=0;
+    for(int i=0;*(ptr+i)!='\0';i++){
+        if(*(ptr+i)==' ')
+            ct=ct;
+        else
+        ct++;
+    }
+    printf("The length of sentence not considering space is %d",--ct);
+}
