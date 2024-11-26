@@ -21,9 +21,9 @@ int main()
     struct Book b;
     
     printf("Enter book title ");
-    scanf(" %[^\n]", b.title);
+    scanf(" %s", b.title);
     printf("Enter author ");
-    scanf("  %[^\n], b.author);
+    scanf("  %s, b.author);
     printf("Enter number of pages");
     scanf("%d", &b.pages);
     printf("Enter price");
