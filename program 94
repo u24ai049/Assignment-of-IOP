@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+    char ori[100],rev[100];
+    char *pri_,*sev_;
+    printf("Enter the string");
+    fgets(ori,100,stdin);
+    pri_=ori;//=&ori[0]
+    sev_=rev;
+    while(*pri_!='\0'){
+    pri_++;
+    }
+    pri_--; // last me + hone ke baad ye null char pe pohoch gaya tha is lie minus karke uske pehle vale non null char pe lae
+    while(pri_>=ori){
+        *sev_=*pri_;
+        pri_--;
+        sev_++;
+    }
+    sev_='\0';//kem ke null ne enter nahto thava didho hato
+    printf("%s",rev);
+}
