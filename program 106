@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Item {
+    char item_name[50];
+    int quantity;
+    float price;
+    float amount;
+};
+
+void calculate_amount(struct Item *item) {
+    item->amount = item->quantity * item->price;
+    printf("Item: %s\nQuantity: %d\nPrice: %.2f\nAmount: %.2f\n", item->item_name, item->quantity, item->price, item->amount);
+}
+
+int main() {
+    struct Item item;
+    printf("Enter item name: ");
+    scanf("%s", item.item_name);
+    printf("Enter quantity: ");
+    scanf("%d", &item.quantity);
+    printf("Enter price: ");
+    scanf("%f", &item.price);
+
+    calculate_amount(&item);
+
+    return 0;
+}
