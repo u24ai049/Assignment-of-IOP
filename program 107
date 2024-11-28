@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int flip(int num, int n) {
+    int last_digits = num % (int)pow(10, n);
+    num -= last_digits;
+    int reversed = 0;
+    while (last_digits > 0) {
+        reversed = reversed * 10 + last_digits % 10;
+        last_digits /= 10;
+    }
+    return num + reversed;
+}
+
+int main() {
+    int num, n;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Enter number of digits to flip: ");
+    scanf("%d", &n);
+    printf("Result: %d\n", flip(num, n));
+    return 0;
+}
