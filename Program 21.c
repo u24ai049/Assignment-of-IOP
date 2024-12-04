@@ -1,11 +1,11 @@
-// C program to perform specific tasks based on arithmethic operations by using switch case.
+
 #include <stdio.h>
 int main()
 {
     float a,b;
-    char n;
-    printf("enter the value of a and b:");
-    scanf("%f%f%d",&a,&b,&n);
+    
+    printf("enter the value of a and b");
+    scanf("%f%f%d",&a,&b);
     switch(n){
         case '+':printf("sum is:%f",a+b);
                 break;
